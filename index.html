@@ -1,2 +1,42 @@
-<h1>Hello World</h1>
-<p>My name is Laura and I have just started my adventure at the Craft Academy Bootcamp!</p>
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" ; charset=UTF-8" />
+    <title>My First Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="flex bg-grey-lighter">
+            <a class="flex-1 text-grey-darker text-center bg-grey-light px-4 py-2 m-2" href="./index.html">Home</a>
+            <a class="flex-1 text-grey-darker text-center bg-grey-light px-4 py-2 m-2" href="./mycats.html">Meet my
+                cats!</a>
+        </nav>
+
+        <h1 id="h1" class="text-center mt-20">Hello World!</h1>
+        <p class="text-center mt-10">My name is Laura and I have just started my adventure at the Craft Academy
+            Bootcamp!</p>
+        <script>
+            var d = new Date();
+            var weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+
+            var day = weekday[d.getDay()];
+
+            document.getElementById("h1").innerHTML = "Happy " + day + "!";
+        </script>
+        <img class="mt-10" src="./computer_cat.jpg" alt="computer&cat">
+    </div>
+</body>
+
+</html>
